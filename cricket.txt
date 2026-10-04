@@ -1,0 +1,158 @@
+What Is Machine Learning?
+Machine Learning (ML) is a branch of artificial intelligence (AI) in which computers learn patterns from data and use those patterns to make predictions, decisions, or generate outputs without being explicitly programmed with every rule.
+
+A simple way to think about it:
+
+Traditional programming: Rules + Data → Output
+Machine learning: Data + Desired Outputs → Learned Rules (Model)
+
+For example, instead of writing thousands of rules to determine whether an email is spam, we can give a machine-learning algorithm many examples of spam and non-spam emails. The algorithm learns patterns that distinguish them.
+
+1. A simple example
+Suppose we want a computer to predict the price of a house.
+
+We collect historical data:
+
+Size (sq ft)	Bedrooms	Location score	Price
+800	2	6	₹40 lakh
+1200	3	7	₹60 lakh
+1500	3	8	₹80 lakh
+2000	4	9	₹1.1 crore
+2500	4	9	₹1.4 crore
+
+We give the first three columns to a machine-learning algorithm and tell it the corresponding prices.
+
+The algorithm tries to discover a relationship such as:
+
+House characteristics → House price
+
+After training, we could give it:
+
+1800 sq ft, 3 bedrooms, location score 8
+
+and it might predict:
+
+₹95 lakh
+
+The important point is that we didn't explicitly tell the computer the mathematical formula for calculating the price. The model learned a relationship from examples.
+
+2. What does "learning" mean?
+A machine doesn't learn in exactly the same way a human does.
+
+In ML, "learning" generally means:
+
+Finding useful mathematical patterns or relationships in data and adjusting the model's parameters so that its predictions become better.
+
+Consider a very simple model:
+
+y
+=
+w
+x
++
+b
+
+where:
+
+x
+ = input
+
+y
+ = prediction
+
+w
+ = weight
+
+b
+ = bias
+
+Suppose we're predicting salary from years of experience.
+
+Initially, the model might have:
+
+w
+=
+2
+
+and make poor predictions.
+
+During training, the algorithm changes 
+w
+ and 
+b
+ repeatedly until the predictions become closer to the actual salaries.
+
+So the computer is essentially asking:
+
+"Which values of my parameters make my predictions as accurate as possible?"
+
+That's the essence of machine learning.
+
+3. The basic machine-learning pipeline
+A typical ML system looks something like this:
+
+             DATA
+               ↓
+       Data preprocessing
+               ↓
+        Feature selection
+               ↓
+       Training algorithm
+               ↓
+          ML MODEL
+               ↓
+         Evaluation
+               ↓
+       Deploy the model
+               ↓
+        New input/data
+               ↓
+          Prediction
+
+Let's examine each step.
+
+4. Data
+Machine learning starts with data.
+
+Data can be almost anything:
+
+Images
+
+Text
+
+Audio
+
+Video
+
+Numbers
+
+Sensor measurements
+
+Customer transactions
+
+Medical measurements
+
+Web activity
+
+GPS information
+
+Financial records
+
+For example, a model designed to recognize cats might be trained using thousands or millions of images.
+
+A model designed to understand language might be trained using huge collections of text.
+
+Why is data important?
+Because the model can only learn patterns that are represented in its training data.
+
+If your data is:
+
+too small,
+
+incorrect,
+
+biased,
+
+irrelevant,
+
+poorly labeled,
